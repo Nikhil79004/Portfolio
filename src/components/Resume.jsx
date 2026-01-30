@@ -2,62 +2,61 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="bg-gray-400 h-full w-[80%] justify-center items-center p-20 rounded-2xl m-36 text-black">
+    <div className="bg-gray-400 min-h-screen w-full md:w-[80%] mx-auto p-4 md:p-20 rounded-2xl text-black">
       <div>
-        <h1 className="text-3xl font-bold font-serif underline tracking-wide">
-          Nikhil singh mehra
+        <h1 className="text-2xl md:text-3xl font-bold font-serif underline tracking-wide">
+          Nikhil Singh Mehra
         </h1>
-        <h3 className="text-lg mt-4 font-semibold">
+        <h3 className="text-base md:text-lg mt-4 font-semibold">
           I'm a software engineer, product designer.
         </h3>
-        <p className="text-lg font-semibold">
-          Well-versed with React, Javascript, and most of the Web frameworks.
+        <p className="text-base md:text-lg font-semibold">
+          Well-versed with React, JavaScript, and modern web frameworks.
         </p>
       </div>
 
-      <div className="text-lg font-serif font-semibold flex gap-20 pt-10 ">
+      <div className="text-base md:text-lg font-serif font-semibold flex gap-10 pt-6">
         <a
-          className="underline rounded-xl hover:scale-110 transition-transform duration-300 "
+          className="underline hover:scale-110 transition-transform duration-300"
           href="https://github.com/Nikhil79004"
         >
-          Github
+          GitHub
         </a>
         <a
-          className="underline rounded-xl hover:scale-110 transition-transform duration-300"
+          className="underline hover:scale-110 transition-transform duration-300"
           href="mailto:mehranikhilsingh@gmail.com"
         >
           Email
         </a>
       </div>
 
-      <div className="mt-4">
-        <h1 className="font-bold text-2xl underline tracking-wide">
-          Experience:-
-        </h1>
-      </div>
-      <div className="mt-4 font-semibold text-lg">
-        <p className="text-lg">
-          Cloned many websites of different companies, for self improvement and
-          enhance self-skills.
-        </p>
-        <h3 className="text-lg">Started at 2023 Dec.</h3>
-      </div>
-      <div className="font-semibold text-lg">
-        <h2 className="text-2xl mt-4 font-bold underline tracking-wide">
-          Education
-        </h2>
-        <h3 className="mt-4">University -- Uttarakhand Open University</h3>
-        <p>Graduation in Bachlor of Arts at 2025</p>
-      </div>
-      <div className="mt-4 text-lg font-semibold">
-        <h1 className="text-2xl mt-4 font-bold underline tracking-wide">
-          Skills:
+      <div className="mt-6">
+        <h1 className="font-bold text-xl md:text-2xl underline">
+          Experience
         </h1>
         <p className="mt-4">
-          Frontend Technologies: HTML, CSS, JavaScript, Tailwind CSS, React.js
+          Cloned multiple websites for self-improvement and skill enhancement.
         </p>
-        <p>3D Development: React Three Fiber, Three.js</p>
-        <p> Version Control: Git, GitHub</p>
+        <p>Started: Dec 2023</p>
+      </div>
+
+      <div className="mt-6">
+        <h2 className="text-xl md:text-2xl font-bold underline">
+          Education
+        </h2>
+        <p className="mt-4">Uttarakhand Open University</p>
+        <p>Bachelor of Arts (2025)</p>
+      </div>
+
+      <div className="mt-6">
+        <h1 className="text-xl md:text-2xl font-bold underline">
+          Skills
+        </h1>
+        <p className="mt-4">
+          HTML, CSS, JavaScript, Tailwind CSS, React.js
+        </p>
+        <p>React Three Fiber, Three.js</p>
+        <p>Git, GitHub</p>
       </div>
     </div>
   );
