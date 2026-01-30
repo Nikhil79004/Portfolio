@@ -1,27 +1,29 @@
-import React from 'react'
+import React from "react";
 
-const Card = (props) => {
+const Card = ({ img, href }) => {
   return (
-    <div>
-      <card>
-          <div className="mt-12 overflow-hidden rounded-3xl w-[600px] h-[400px] shadow-lg">
-            <img
-              className="h-full w-full object-cover hover:scale-105 transition-transform duration-500"
-              src={props.img}
-              alt="project"
-            />
-          </div>
-          <div className="pt-3 w-[400px]">
-            <a
-              className="bg-blue-200 text-2xl p-2 font-semibold rounded-3xl border-2 border-black justify-center items-center hover:bg-blue-400 "
-              href={props.href}
-            >
-              Click Here...!
-            </a>
-          </div>
-        </card>
-    </div>
-  )
-}
+    <div className="flex flex-col items-center">
+      {/* Image */}
+      <div className="mt-12 w-full max-w-[600px] aspect-[3/2] overflow-hidden rounded-3xl shadow-lg">
+        <img
+          src={img}
+          alt="project"
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+        />
+      </div>
 
-export default Card
+      {/* Button */}
+      <div className="pt-4 w-full max-w-[600px] flex justify-center">
+        <a
+          href={href}
+          target="_blank"
+          className="bg-blue-200 text-xl px-6 py-2 font-semibold rounded-3xl border-2 border-black hover:bg-blue-400 transition"
+        >
+          Click Here...!
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default Card;

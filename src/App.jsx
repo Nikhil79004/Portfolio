@@ -34,8 +34,19 @@ const App = () => {
 
       {!isResumePage && (
         <>
-          <main className="flex-1 w-full max-w-screen-2xl mx-auto flex flex-col gap-4 px-2 sm:px-4 md:px-8">
-            <Mid />
+          {/* Responsive main layout */}
+          <main className="
+              flex-1 w-full 
+              max-w-screen-2xl mx-auto 
+              flex flex-col gap-4 
+              px-2 sm:px-4 md:px-8
+              md:gap-8
+              lg:gap-10
+          ">
+            {/* Responsive Mid Section */}
+            <section className="w-full">
+              <Mid />
+            </section>
 
             <div ref={contactRef}>
               <Contact />
