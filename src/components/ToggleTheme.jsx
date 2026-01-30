@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 
 const ToggleTheme = () => {
+
+
   const [theme, setTheme] = useState(() => {
-    if (localStorage.getItem("theme")) {
-      return localStorage.getItem("theme");
+    // Tries to load saved theme, defaults to "light"
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem("theme");
+      if (saved) return saved;
     }
     return "light";
   });
@@ -42,7 +46,6 @@ const ToggleTheme = () => {
           <path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.5-7.5L17 6m-10 12l-1.5 1.5M6 6l1.5 1.5M18 18l1.5 1.5" />
         </svg>
       ) : (
-        
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-6 h-6 text-gray-800"
