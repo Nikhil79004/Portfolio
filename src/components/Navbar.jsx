@@ -33,13 +33,7 @@ const Navbar = ({ scrollToAbout, scrollToContact }) => {
             Home
           </Link>
 
-          <Link
-            className="hover:bg-gray-300 p-4 rounded-3xl"
-            to="/"
-            onClick={handleAboutClick}
-          >
-            About
-          </Link>
+          <Link className="hover:bg-gray-300 p-4 rounded-3xl" to="/" onClick={handleAboutClick}>About</Link>
 
           {/* ✅ lowercase route */}
           <Link
